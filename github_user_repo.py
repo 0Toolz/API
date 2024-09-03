@@ -14,6 +14,6 @@ if response.status_code == 200:
     
     print(f"Repositories for user {username}:")
     for repo in repos: 
-    	print(f"Name: {repo['name']}, Stars: {repo['stargazers_count']}, Language: {repo['language']}, URL: {repo['html_url]}")
+    	print(f"Name: {repo['name']}, Stars: {repo['stargazers_count']}, Language: {repo['language']}, URL: {repo['html_url']}")
     else:
     	print(f"Failed to retrieve repositories: {response.status.code}")
